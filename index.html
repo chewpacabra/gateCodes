@@ -13,36 +13,47 @@
   </head>
   <body>
     <h1> The Cat Clicker! </h1>
+    <ul data-bind="foreach: catList">
+      <li data-bind="text: name, click: $parent.setCat"></li>
+    </ul>
     <div class="container">
-      <div class="col-sm-4" >
+      <div class="col-sm-4"  data-bind="with: currentCat">
         <div class="panel panel-primary">
-        <div class="panel-heading">Player 1</div>
-        <div class="panel-body"><strong data-bind="text: numberOfClicks"></strong></div>
+        <div class="panel-heading" data-bind="text: name"></div>
+        <div class="panel-body">
+          <div>
+            <strong data-bind="text: level"></strong>
+          </div>
+          <div>
+            <img src="" alt="mustacheCat" data-bind="click: $parent.registerClick, attr: {src: imgSrc}">
+          </div>
+          <div>
+            <strong data-bind="text: numberOfClicks"></strong></div>
+          </div>
+          <div>
+            <h3>Nicknames:</h3>
+            <ul data-bind="foreach: nicknames">
+              <li data-bind="text: $data"></li>
+            </ul>
+          </div>
+          </div>
         </div>
       </div>
       <div class="col-sm-4">
-        <div class="panel panel-primary">
-        <div class="panel-heading">Player 2</div>
-        <div class="panel-body"><strong data-bind="text: numberOfClicks"></strong></div>
-        </div>
       </div>
       <div class="col-sm-4">
-        <div class="panel panel-primary">
-        <div class="panel-heading">Player 3</div>
-        <div class="panel-body"><strong data-bind="text: numberOfClicks"></strong></div>
-        </div>
       </div>
 
     </div>
     <div class="col-sm-12" id="buttonDiv">
-       <button class="btn btn-primary" data-bind='click: registerClick'>Button</button>
-       <button class="btn btn-secondary" data-bind='click: registerClick'>Button</button>
+       <button class="btn btn-primary" data-bind='click: registerClick, disable: hasClickedTooManyTimes'>Button</button>
+       <button class="btn btn-primary" data-bind='click: jsonify, disable: hasClickedTooManyTimes'>JSON</button>
     </div>
-    <div>
+    <div data-bind="visible: hasClickedTooManyTimes">
       This is a hidden section that only appears when a function is performed.
+      <button class="btn btn-primary" data-bind='click: resetClick'>Button</button>
     </div>
-    <p>First name: <strong data-bind="text: firstName"></strong></p>
-    <p>Last name: <strong data-bind="text: lastName"></strong></p>
+    <script src="js/data.js"></script>
     <script src="js/app.js"></script>
     <!-- Reference for several libraries that knockout uses via a .js file -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
