@@ -1,5 +1,6 @@
 var gateCodes = [
   {
+    id: 1,
     name: 'Ventura Lofts',
     address: '401 S Gessner Rd, Houston, TX 77063',
     contact: '281-330-8004',
@@ -8,6 +9,7 @@ var gateCodes = [
     timestamp: '4 hours ago',
   },
   {
+    id: 2,
     name: 'Eagle Crest Apartments',
     address: '5303 Atascocita Road, Atascocita, TX 77346',
     contact: '281-330-8004',
@@ -16,6 +18,7 @@ var gateCodes = [
     timestamp: '12 hours ago',
   },
   {
+    id: 3,
     name: 'Timberlakes at Atascocita',
     address: '18551 Timber Forest Dr, Humble, TX 77346',
     contact: '281-330-8004',
@@ -24,6 +27,7 @@ var gateCodes = [
     timestamp: '18 hours ago',
   },
   {
+    id: 4,
     name: 'Ventura Lofts',
     address: '401 S Gessner Rd, Houston, TX 77063',
     contact: '281-330-8004',
@@ -32,6 +36,7 @@ var gateCodes = [
     timestamp: '4 hours ago',
   },
   {
+    id: 5,
     name: 'Ventura Lofts',
     address: '401 S Gessner Rd, Houston, TX 77063',
     contact: '281-330-8004',
@@ -40,6 +45,7 @@ var gateCodes = [
     timestamp: '4 hours ago',
   },
   {
+    id: 6,
     name: 'Ventura Lofts',
     address: '401 S Gessner Rd, Houston, TX 77063',
     contact: '281-330-8004',
@@ -48,6 +54,7 @@ var gateCodes = [
     timestamp: '4 hours ago',
   },
   {
+    id: 7,
     name: 'Ventura Lofts',
     address: '401 S Gessner Rd, Houston, TX 77063',
     contact: '281-330-8004',
@@ -56,6 +63,7 @@ var gateCodes = [
     timestamp: '4 hours ago',
   },
   {
+    id: 8,
     name: 'Ventura Lofts',
     address: '401 S Gessner Rd, Houston, TX 77063',
     contact: '281-330-8004',
