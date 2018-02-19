@@ -21,18 +21,21 @@ img {
 }
 
 #divLeft {
-    width: 75px;
+    width: 25%;
 }
 
 #divRight {
-
+  width: 75%;
 }
 
 #likeRow {
   text-align: center;
 }
 
-
+.icon {
+  min-width: 75px;
+  min-height: 75px;
+}
 #entry {
   margin-top: 5px;
   margin-right: 5px;
