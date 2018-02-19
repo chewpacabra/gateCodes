@@ -1,32 +1,26 @@
-var initialCats = [
+var gateCodes = [
   {
-    name: 'Grass',
-    nicknames: ['Nature Girl', 'Lawndry'],
-    numberOfClicks: 0,
-    imgSrc: 'img/earCat.jpg',
+    name: 'Ventura Lofts',
+    address: '401 S Gessner Rd, Houston, TX 77063',
+    contact: '281-330-8004',
+    entry: '1234',
+    exit: '4321',
+    timestamp: '4 hours ago',
   },
   {
-    name: 'Carper',
-    nicknames: ['Carpet Lover', 'AStare'],
-    numberOfClicks: 0,
-    imgSrc: 'img/smallCat.jpg',
+    name: 'Eagle Crest Apartments',
+    address: '5303 Atascocita Road, Atascocita, TX 77346',
+    contact: '281-330-8004',
+    entry: '9020',
+    exit: '6494',
+    timestamp: '12 hours ago',
   },
   {
-    name: 'Pouncer',
-    nicknames: ['Night Stalker', 'BeadyEyes'],
-    numberOfClicks: 0,
-    imgSrc: 'img/mustacheCat.jpg',
-  },
-  {
-    name: 'Happy',
-    nicknames: ['All-smiles', 'Bigfoot'],
-    numberOfClicks: 0,
-    imgSrc: 'img/kittenCat.jpg',
-  },
-  {
-    name: 'Sleepy',
-    nicknames: ['Ming-ming', 'Boss Miaowok', 'Kuting'],
-    numberOfClicks: 0,
-    imgSrc: 'img/scaredCat.jpg',
+    name: 'Timberlakes at Atascocita',
+    address: '18551 Timber Forest Dr, Humble, TX 77346',
+    contact: '281-330-8004',
+    entry: '1234',
+    exit: '4321',
+    timestamp: '18 hours ago',
   }
 ];

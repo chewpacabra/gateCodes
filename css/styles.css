@@ -12,3 +12,33 @@ img {
     max-height: 100%;
     max-width: 100%;
 }
+
+.container {
+  margin: 1em 3em;
+	color: #999;
+	padding-left: 1em;
+  max-width: 1024px;
+}
+/* #divv {
+    border: 2px solid red;
+    border-radius: 5px;
+    min-height: 15px;
+}
+
+*/
+
+#divLeft {
+    width: 75px;
+}
+
+#likeRow {
+  text-align: right;
+}
+
+
+#entry {
+  margin-top: 5px;
+  border-radius: 25px;
+  border: 2px solid #D3D3D3;
+  padding: 20px;
+}
