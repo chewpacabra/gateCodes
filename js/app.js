@@ -6,6 +6,7 @@ var GateCode = function(gateCode) {
   self.entry = ko.observable(gateCode.entry);
   self.exit = ko.observable(gateCode.exit);
   self.timestamp = ko.observable(gateCode.timestamp);
+  self.score = ko.observable(gateCode.score);
 }
 
 // var Cat = function (data) {

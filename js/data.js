@@ -7,6 +7,8 @@ var gateCodes = [
     entry: '1234',
     exit: '4321',
     timestamp: '4 hours ago',
+    creater: 'eg541n',
+    score: '11'
   },
   {
     id: 2,
@@ -16,6 +18,8 @@ var gateCodes = [
     entry: '9020',
     exit: '6494',
     timestamp: '12 hours ago',
+    creater: 'eg541n',
+    score: '7'
   },
   {
     id: 3,
@@ -25,6 +29,8 @@ var gateCodes = [
     entry: '1234',
     exit: '4321',
     timestamp: '18 hours ago',
+    creater: 'eg541n',
+    score: '1'
   },
   {
     id: 4,
@@ -34,6 +40,8 @@ var gateCodes = [
     entry: '1234',
     exit: '4321',
     timestamp: '4 hours ago',
+    creater: 'eg541n',
+    score: '3'
   },
   {
     id: 5,
@@ -43,6 +51,8 @@ var gateCodes = [
     entry: '1234',
     exit: '4321',
     timestamp: '4 hours ago',
+    creater: 'eg541n',
+    score: '7'
   },
   {
     id: 6,
@@ -52,6 +62,8 @@ var gateCodes = [
     entry: '1234',
     exit: '4321',
     timestamp: '4 hours ago',
+    creater: 'eg541n',
+    score: '12'
   },
   {
     id: 7,
@@ -61,6 +73,8 @@ var gateCodes = [
     entry: '1234',
     exit: '4321',
     timestamp: '4 hours ago',
+    creater: 'eg541n',
+    score: '27'
   },
   {
     id: 8,
@@ -70,5 +84,7 @@ var gateCodes = [
     entry: '1234',
     exit: '4321',
     timestamp: '4 hours ago',
+    creater: 'eg541n',
+    score: '0'
   },
 ];
