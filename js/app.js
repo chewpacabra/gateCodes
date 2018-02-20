@@ -1,12 +1,13 @@
 var GateCode = function(gateCode) {
   var self = this;
-  self.name = ko.observable(gateCode.name);
+  self.name = gateCode.name;
   self.address = ko.observable(gateCode.address);
   self.contact = ko.observable(gateCode.contact);
   self.entry = ko.observable(gateCode.entry);
   self.exit = ko.observable(gateCode.exit);
   self.timestamp = ko.observable(gateCode.timestamp);
   self.score = ko.observable(gateCode.score);
+  self.visible = ko.observable(true);
 }
 
 // var Cat = function (data) {
@@ -31,10 +32,28 @@ var GateCode = function(gateCode) {
 
 var ViewModel = function() {
   var self = this;
+  self.query = ko.observable("");
   self.gateCodeList = ko.observableArray([]);
   gateCodes.forEach(function(gateCode){
     self.gateCodeList.push( new GateCode(gateCode) );
   });
+  // This enables search capabilities
+  this.queryList = ko.computed( function() {
+    var filter = self.query().toLowerCase();
+    if (!filter) {
+      self.gateCodeList().forEach(function(gateCode){
+        gateCode.visible(true);
+      });
+      return self.gateCodeList();
+    } else {
+      return ko.utils.arrayFilter(self.gateCodeList(), function(gateCode) {
+        var string = gateCode.name.toLowerCase();
+        var result = (string.search(filter) >= 0);
+        gateCode.visible(result);
+        return result;
+    });
+  }
+}, self);
 }
 //
 // //   $.getJSON( "data.json", function( data ) {

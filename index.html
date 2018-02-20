@@ -31,14 +31,14 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <form class="navbar-form navbar-left">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
+                  <input data-bind="textInput: query, valueUpdate: 'afterkeydown'" type="text" class="form-control" placeholder="Search for...">
                 </div>
               </form>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
       <!--Entry Template-->
-      <div data-bind="foreach: gateCodeList">
+      <div data-bind="foreach: queryList">
         <div class="row" id="entry">
           <div id="divLeft" class="col-xs-1">
             <img src="img/logo.png" alt="icon">
@@ -77,19 +77,30 @@
       <!--End Entry Template -->
       <!-- Begin footer -->
       <div class="row" id="footer">
-        <div class="col-xs-3">
-          <a href="#" class="btn btn-lg"><span class="glyphicon glyphicon-home"></span></a>
+        <div class="row">
+          <div id="searchCollapse" class="collapse">
+            <input data-bind="textInput: query, valueUpdate: 'afterkeydown'" type="text" class="form-control" placeholder="Search for...">
+          </div>
+          <div id="addCollapse" class="collapse">
+            Add Entry Here!
+          </div>
         </div>
-        <div class="col-xs-3">
-          <a href="#" class="btn btn-lg"><span class="glyphicon glyphicon-search"></span></a>
-        </div>
-        <div class="col-xs-3">
-          <a href="#" class="btn btn-lg"><span class="glyphicon glyphicon-user"></span></a>
-        </div>
-        <div class="col-xs-3">
-          <!-- Button trigger modal -->
-          <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Launch demo modal</button> -->
-          <a href="#" class="btn btn-lg" data-toggle="modal" data-target="#exampleModal"><span class="glyphicon glyphicon-plus"></span></a>
+        <div class="row">
+          <div class="col-xs-3">
+            <a href="#" class="btn btn-lg"><span class="glyphicon glyphicon-home"></span></a>
+          </div>
+          <div class="col-xs-3">
+            <a href="#" data-toggle="collapse" data-target="#searchCollapse" class="btn btn-lg"><span class="glyphicon glyphicon-search"></span></a>
+          </div>
+          <div class="col-xs-3">
+            <a href="#" class="btn btn-lg"><span class="glyphicon glyphicon-user"></span></a>
+          </div>
+          <div class="col-xs-3">
+            <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Launch demo modal</button> -->
+            <!-- <a href="#" class="btn btn-lg" data-toggle="modal" data-target="#exampleModal"><span class="glyphicon glyphicon-plus"></span></a> -->
+            <a href="#" class="btn btn-lg" data-toggle="collapse" data-target="#addCollapse"><span class="glyphicon glyphicon-plus"></span></a>
+          </div>
         </div>
       </div>
     </div>
