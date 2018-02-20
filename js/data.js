@@ -4,7 +4,7 @@ var gateCodes = [
     name: 'Ventura Lofts',
     address: '401 S Gessner Rd, Houston, TX 77063',
     contact: '281-330-8004',
-    entry: '1234',
+    entry: 'key1234',
     exit: '4321',
     timestamp: '4 hours ago',
     creater: 'eg541n',
